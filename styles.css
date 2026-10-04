@@ -77,10 +77,10 @@
 }
 .title-main{
   font-family: var(--serif);
-  font-size: 128px;
+  font-size: 92px;
   font-weight: 400;
   letter-spacing: -0.028em;
-  line-height: 0.98;
+  line-height: 1.02;
   margin: 0;
 }
 .title-sub{
@@ -92,8 +92,9 @@
   margin: 12px 0 0 0;
 }
 .title-byline{ margin-top: auto; padding-top: 64px; }
-.title-author{ font-size: 29px; font-weight: 600; }
-.title-date{ font-size: 25px; color: var(--mute); margin-top: 6px; }
+.title-author{ font-size: 29px; font-weight: 600; white-space: nowrap; }
+.title-company{ font-size: 25px; font-weight: 500; color: var(--accent); margin-top: 6px; }
+.title-date{ font-size: 25px; color: var(--mute); margin-top: 22px; }
 .geo-accent{ position: absolute; right: 0; bottom: 0; width: 200px; height: 200px; }
 
 /* ============ INVERTED SLIDE — the one dark moment ============ */
@@ -423,10 +424,11 @@ html.print-pdf .reveal .speaker-notes-pdf{
     width: auto !important;
   }
   html:not(.print-pdf) .reveal .title-label{ font-size: 24px !important; margin: 0 0 30px 0 !important; }
-  html:not(.print-pdf) .reveal .title-main{ font-size: 128px !important; color: var(--ink) !important; }
+  html:not(.print-pdf) .reveal .title-main{ font-size: 92px !important; color: var(--ink) !important; line-height: 1.02 !important; }
   html:not(.print-pdf) .reveal .title-sub{ font-size: 40px !important; margin: 12px 0 0 0 !important; }
-  html:not(.print-pdf) .reveal .title-author{ font-size: 29px !important; }
-  html:not(.print-pdf) .reveal .title-date{ font-size: 25px !important; margin: 6px 0 0 0 !important; }
+  html:not(.print-pdf) .reveal .title-author{ font-size: 29px !important; white-space: nowrap !important; }
+  html:not(.print-pdf) .reveal .title-company{ font-size: 25px !important; color: var(--accent) !important; margin: 6px 0 0 0 !important; }
+  html:not(.print-pdf) .reveal .title-date{ font-size: 25px !important; margin: 22px 0 0 0 !important; }
 
   .reveal .slides section,
   section.invert,
